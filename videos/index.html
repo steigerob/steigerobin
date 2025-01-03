@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Experiment Visualizations</title>
+  <style>
+    /*  body  */
+    body {
+      margin: 0 auto;
+      padding: 20px;
+      max-width: 1000px; 
+      font-family: sans-serif;
+      line-height: 1.5;
+      background: #fafafa;
+    }
+
+    h1, h2 {
+      color: #333;
+      margin-top: 0; 
+    }
+
+    a {
+      color: #007acc;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    p {
+      margin: 1em 0;
+    }
+
+    /* Flex container */
+    .video-container {
+      display: flex;
+      flex-wrap: wrap;       
+      gap: 20px;           
+      margin: 2em 0;
+    }
+
+    .video-card {
+      flex: 1 1 45%;         /* Take ~45% of container width*/
+      min-width: 300px;   
+      background: #fff;
+      padding: 1em;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    .video-card h2 {
+      margin-top: 0;
+      font-size: 1.2em;
+    }
+
+    video {
+      width: 100%;
+      height: auto;
+      border: 2px solid #ddd;
+      border-radius: 4px;
+      outline: none;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Experiment Visualizations</h1>
+  <p>
+    The videos below document the navigation trials conducted on October 3, 2024, 
+    at the <a href="https://isr.tecnico.ulisboa.pt/">ISR Testbed in Lisbon</a>.
+    These trials demonstrate the robot's performance in navigating towards a designated goal,
+    marked by an 'X' on the floor.
+    In the bottom right of each video, the current navigation data is displayed,
+    where the tf-frame "RigidBody01" represents the robot's real pose and "base_footprint" 
+    indicates the most probable pose estimate derived from the GMapping algorithm.
+    For a detailed discussion and analysis, please refer to the corresponding sections in my master thesis.
+  </p>
+
+  <div class="video-container">
+    <div class="video-card">
+      <h2>Dynamic Window Approach (DWA)</h2>
+      <video controls>
+        <source src="DWA.mp4" type="video/mp4">
+        Your browser does not support HTML video.
+      </video>
+    </div>
+
+    <div class="video-card">
+      <h2>Pose Boost Function (PBF)</h2>
+      <video controls>
+        <source src="PBF.mp4" type="video/mp4">
+        Your browser does not support HTML video.
+      </video>
+    </div>
+  </div>
+
+  <p>Peace,<br>Robin</p>
+</body>
+</html>
