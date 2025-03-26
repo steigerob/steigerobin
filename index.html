@@ -13,7 +13,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
 
     <!--Favicon-->
-    <link rel="shortcut icon" href="files/images/favicon-2.ico" title="Favicon" />
+    <link rel="shortcut icon" href="files/images/favicon.ico" title="Favicon" />
 
     <!-- Main CSS Files -->
     <link rel="stylesheet" href="style/css/style.css">
@@ -83,13 +83,13 @@
                         <div id="logo">
 
                             <!--Logo that is shown on the banner-->
-                            <a href="index.html#top">
+                            <a href="index.html#banner">
                                 <img src="files/images/logo.png" id="banner-logo" alt="Landing Page" />
                             </a>
                             <!--End of Banner Logo-->
 
                             <!--The Logo that is shown on the sticky Navigation Bar-->
-                            <a href="index.html#top">
+                            <a href="index.html#banner">
                                 <img src="files/images/logo.png" id="navigation-logo" alt="Landing Page" />
                             </a>
                             <!--End of Navigation Logo-->
@@ -135,23 +135,27 @@
                         <nav id="nav-main">
                             <ul>
                                 <li>
-                                    <a href="#top">Home</a>
+                                    <a href="#banner">Home</a>
                                 </li>
-                                <li>
-                                    <a href="#about">About</a>
-                                </li>
+                                <!-- <li>
+                                    <a href="#skills">Skills</a>
+                                </li> -->
                                 <li>
                                     <a href="#professional">Professional</a>
                                 </li>
-                                <li>
-                                    <a href="#gallery">Gallery</a>
-                                </li>
-                                <li>
-                                    <a href="#private">Private</a>
-                                </li>
+
                                 <li>
                                     <a href="#testimonials">Testimonials</a>
                                 </li>
+                                 
+                                <li>
+                                    <a href="#gallery">Gallery</a>
+                                </li>
+
+                                <li>
+                                    <a href="#private">Private</a>
+                                </li>
+                                
                                 <li>
                                     <a href="#miscellaneous">Miscellaneous</a>
                                 </li>
@@ -177,7 +181,8 @@
 
                     <div class="section-heading">
                         <h1>Welcome!</h1>
-                        <h2>Like all IT-nerds I also have my own homepage.</h2>
+                        <h2>I'm Robin, a software engineer specialized in robotics, AI,
+                            and bringing creative ideas to life.</h2>
                     </div>
 
                     <!--Call to Action-->
@@ -192,108 +197,110 @@
         <!--Main Content Area-->
         <main id="content">
 
-            <!--Introduction-->
-            <section id="about" class="introduction scrollto">
+            <!-- #skills Section -->
+            <section id="professional" class="introduction scrollto">
 
+            <!-- </section> text-center"> -->
                 <div class="row clearfix">
 
-                    <div class="col-3">
-                        <div class="section-heading">
-                            <!-- <h3>short facts</h3> -->
-                            <h2 class="section-title">some<br>characteristics</h2>
-                            <p class="section-subtitle">colorful <br>a bit nerdy <br>communicative </p>
-                        </div>
-
+                    <div class="section-heading col-4">
+                        <h3 class="section-title">SKILLS</h3>
+                        <h2 class="section-title">My Core Skills & Specializations</h2>
+                        <!-- <h3>SKILLS</h3> -->
+                        <p class="section-subtitle">
+                            Throughout <a href="#miscellaneous">my studies and various projects</a>,
+                            I've acquired experience and expertise in multiple fields.
+                            Below are some of my key skills and areas of specialization.
+                        </p>
                     </div>
+                    <!-- Right Column: Skills Overview -->
+                    <div class="row clearfix col-3-4">
 
-                    <div class="col-2-3">
-
-                        <!--Icon Block-->
-                        <div class="col-2 icon-block icon-top wow fadeInUp" data-wow-delay="0.1s">
-                            <!--Icon-->
+                        <!-- Example Icon Block #1 -->
+                        <div class="col-3 icon-block icon-top wow fadeInUp" data-wow-delay="0.1s">
                             <div class="icon">
-                                <i class="fa-solid fa-people-arrows fa-2x"></i>
+                                <i class="fa-solid fa-laptop-code fa-2x"></i>
                             </div>
-                            <!--Icon Block Description-->
                             <div class="icon-block-description">
-                                <h4> Sociable </h4>
-                                <p>Love interacting with people from
-                                    different backgrounds.</p>
+                                <h4>Programming Languages</h4>
+                                <p>C, C++, C#, Python, VB.NET, SQL, HTML</p>
                             </div>
                         </div>
-                        <!--End of Icon Block-->
 
-                        <!--Icon Block-->
-                        <div class="col-2 icon-block icon-top wow fadeInUp" data-wow-delay="0.3s">
-                            <!--Icon-->
+                        <!-- Example Icon Block #2 -->
+                        <div class="col-3 icon-block icon-top wow fadeInUp" data-wow-delay="0.3s">
                             <div class="icon">
-                                <i class="fa-solid fa-hands-holding-circle fa-2x"></i>
+                                <i class="fa-solid fa-cubes fa-2x"></i>
                             </div>
-                            <!--Icon Block Description-->
                             <div class="icon-block-description">
-                                <h4>Meticulous</h4>
-                                <p>Always motivated and obsessed with delivering the
-                                    best possible result.</p>
+                                <h4>Frameworks / Libraries</h4>
+                                <p>ROS, WPF, .NET</p>
                             </div>
                         </div>
-                        <!--End of Icon Block-->
 
-                        <!--Icon Block-->
-                        <div class="col-2 icon-block icon-top wow fadeInUp" data-wow-delay="0.5s">
-                            <!--Icon-->
+                        <!-- Example Icon Block #3 -->
+                        <div class="col-3 icon-block icon-top wow fadeInUp" data-wow-delay="0.5s">
                             <div class="icon">
-                                <i class="fa-solid fa-heart fa-2x"></i>
+                                <i class="fa-solid fa-diagram-project fa-2x"></i>
                             </div>
-                            <!--Icon Block Description-->
                             <div class="icon-block-description">
-                                <h4>Loving</h4>
-                                <p>Empathetic, loyal and always
-                                    available in all kinds of relationships.</p>
+                                <h4>Development Methods</h4>
+                                <p>Scrum, OOAD (UML), Waterfall, V-Modell</p>
                             </div>
                         </div>
-                        <!--End of Icon Block-->
 
-                        <!--Icon Block-->
-                        <div class="col-2 icon-block icon-top wow fadeInUp" data-wow-delay="0.5s">
-                            <!--Icon-->
+                        <!-- Example Icon Block #4 -->
+                        <div class="col-3 icon-block icon-top wow fadeInUp" data-wow-delay="0.5s">
                             <div class="icon">
-                                <i class="fa-solid fa-face-smile-wink fa-2x"></i>
+                                <i class="fa-solid fa-gears fa-2x"></i>
                             </div>
-                            <!--Icon Block Description-->
                             <div class="icon-block-description">
-                                <h4>Optimistic</h4>
-                                <p>Life is hard enough.
-                                    Let's try to make it better and accept the things we can not change.</p>
+                                <h4>Tools & OS</h4>
+                                <p>Visual Studio, Git, SVN, Atom, Vim<br>
+                                   Linux (Ubuntu, etc.), Windows
+                                </p>
                             </div>
                         </div>
-                        <!--End of Icon Block-->
 
-                    </div>
+                        <!-- Optionally more Icon Blocks for "Languages," "Focus Areas," etc. -->
+                        <div class="col-3 icon-block icon-top wow fadeInUp" data-wow-delay="0.7s">
+                            <div class="icon">
+                                <i class="fa-solid fa-globe fa-2x"></i>
+                            </div>
+                            <div class="icon-block-description">
+                                <h4>Languages</h4>
+                                <p>Native German, Advanced English, Upper-Intermediate Portuguese & Spanish</p>
+                            </div>
+                        </div>
 
-                </div>
+                        <div class="col-3 icon-block icon-top wow fadeInUp" data-wow-delay="0.9s">
+                            <div class="icon">
+                                <i class="fa-solid fa-robot fa-2x"></i>
+                            </div>
+                            <div class="icon-block-description">
+                                <h4>Focus Areas</h4>
+                                <p>Robotics & AI (ROS, C++), Full-Stack Development, WPF Applications, Requirements Engineering</p>
+                            </div>
+                        </div>
 
+                    </div><!-- End .col-2-3 -->
+                </div><!-- End .col-2-3 -->
 
+                </div><!-- End .row -->
             </section>
-            <!--End of Introduction-->
 
 
 
 
             <!--Content Section-->
-            <div id="professional" class="scrollto clearfix">
+            <div class="scrollto clearfix">
 
                 <div class="row no-padding-bottom clearfix">
 
 
                     <!--Content Left Side-->
                     <div class="col-3">
-                            <blockquote class="testimonial text-right bigtest">
-                            <q>Absolutely perfect.
-                                Rarely have I seen such a clear and meticulous piece of work.
-                            </q>
-                            <footer>— Dr. Lukas Luft,<br>AIS Freiburg</footer>
-                        </blockquote>
-    
+                        <img src="files/images/professional.jpg" alt="Professional Rob" />
                     </div>
                     <!--End Content Left Side-->
 
@@ -314,14 +321,25 @@
                             building a WPF app entirely from scratch. 
                             I love connecting with people and truly value a supportive,
                             collaborative team.</p>
-                        <a href="files/doc/resume.pdf" class="button">
-                            Download CV
-                        </a>
-                    </div>
+                            <!-- <div style="display: flex; justify-content: space-between;"> -->
+                                <a href="files/doc/resume.pdf" class="button">
+                                    Download CV
+                                </a>
+                                <br>
+                                <!-- <a href="#miscellaneous" class="button">
+                                    Show Projects
+                                </a> -->
+                            </div>
+                    <!-- </div> -->
                     <!--End Content Right Side-->
 
                     <div class="col-3">
-                        <img src="files/images/professional.jpg" alt="Professional Rob" />
+                        <blockquote class="testimonial text-right bigtest">
+                            <q>Absolutely perfect.
+                                Rarely have I seen such a clear and meticulous piece of work.
+                            </q>
+                            <footer>— Dr. Lukas Luft,<br>AIS Freiburg</footer>
+                        </blockquote>
                     </div>
 
                 </div>
@@ -329,10 +347,45 @@
 
             </div>
             <!--End of Content Section-->
+            <!--Testimonials-->
+            <aside id="testimonials" class="scrollto text-center" data-enllax-ratio=".2">
+
+                <div class="row clearfix">
+
+                    <div class="section-heading">
+                        <h3>PROFESSIONAL FEEDBACK</h3>
+                        <h2 class="section-title">What do my mentors think?</h2>
+                    </div>
+
+
+                    <blockquote class="col-3 testimonial classic">
+                        <img src="files/images/user-images/ais.png" alt="User" />
+                        <q> Absolutely perfect.
+                            Rarely have I seen such a clear and meticulous piece of work.
+                        </q>
+                        <footer>Dr. Lukas Luft, AIS Freiburg</footer>
+                    </blockquote>
+                    <blockquote class="col-3 testimonial classic">
+                        <img src="files/images/user-images/jwf.jpg" alt="User" />
+                        <q> Mr. Steiger was competetent and team-oriented
+                            as well as valued and recognized by managers and colleagues alike.
+                        </q>
+                        <footer>Stefan Rothe - JW Froehlich</footer>
+                    </blockquote>
+                    <blockquote class="col-3 testimonial classic">
+                        <img src="files/images/user-images/uni.jpeg" alt="User" />
+                        <q> Robin Steiger is a dedicated and skilled professional,
+                            highly valued for his reliability, technical expertise, and multilingual teamwork
+                        </q>
+                        <footer> Dr. Janina Cünnen - University of Freiburg</footer>
+                    </blockquote>
+                </div>
+            </aside>
+            <!--End of Testimonials-->
 
             <!--Gallery-->
             <aside id="gallery" class="row text-center scrollto clearfix" data-featherlight-gallery
-                data-featherlight-filter="a">
+            data-featherlight-filter="a">
 
                 <a href="files/images/gallery-images/01.jpg" data-featherlight="image" class="col-3 wow fadeIn"
                     data-wow-delay="0.2s"><img src="files/images/gallery-images/01.jpg" alt="Landing Page" /></a>
@@ -350,7 +403,8 @@
 
             </aside>
             <!--End of Gallery-->
-            <!--Content Section-->
+
+            <!--Private Section-->
             <div id="private" class="scrollto clearfix">
 
                 <div class="row no-padding-bottom clearfix">
@@ -402,16 +456,18 @@
 
             </div>
             <!--End of Content Section-->
+
+
+
             <!--Testimonials-->
-            <aside id="testimonials" class="scrollto text-center" data-enllax-ratio=".2">
+            <aside id="private_testimonials" class="scrollto text-center" data-enllax-ratio=".2">
 
                 <div class="row clearfix">
 
                     <div class="section-heading">
-                        <h3>FEEDBACK</h3>
-                        <h2 class="section-title">What do my friends say?</h2>
+                        <h3>PRIVATE FEEDBACK</h3>
+                        <h2 class="section-title">What my friends say about me...</h2>
                     </div>
-
                     <blockquote class="col-3 testimonial classic">
                         <img src="files/images/user-images/wisla.jpg" alt="User" />
                         <q>Robin is caring, trustworthy and has well-defined moral boundaries,
@@ -459,41 +515,11 @@
                         <footer>Joshua - Friend</footer>
                     </blockquote>
 
-                </div>
-
-                <div class="row clearfix">
-
-                    <div class="section-heading">
-                        <h2 class="section-title">What do my mentors think?</h2>
-                    </div>
-
-                    <blockquote class="col-3 testimonial classic">
-                        <img src="files/images/user-images/ais.png" alt="User" />
-                        <q> Absolutely perfect.
-                            Rarely have I seen such a clear and meticulous piece of work.
-                        </q>
-                        <footer>Dr. Lukas Luft, AIS Freiburg</footer>
-                    </blockquote>
-                    <blockquote class="col-3 testimonial classic">
-                        <img src="files/images/user-images/jwf.jpg" alt="User" />
-                        <q> Mr. Steiger was competetent and team-oriented
-                            as well as valued and recognized by managers and colleagues alike.
-                        </q>
-                        <footer>Stefan Rothe - Head of Human Resources JWF</footer>
-                    </blockquote>
-                    <blockquote class="col-3 testimonial classic">
-                        <img src="files/images/user-images/uni.jpeg" alt="User" />
-                        <q> Robin Steiger is a dedicated and skilled professional,
-                            highly valued for his reliability, technical expertise, and multilingual teamwork
-                        </q>
-                        <footer> Dr. Janina Cünnen - University of Freiburg</footer>
-                    </blockquote>
 
                 </div>
 
             </aside>
             <!--End of Testimonials-->
-
 
 
             <!--Miscellaneous-->

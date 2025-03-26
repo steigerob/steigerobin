@@ -258,6 +258,10 @@ section {
     width: 75%;
 }
 
+.col-4-5 {
+    width: 80%;
+}
+
 .col-9-10 {
     width: 90%;
 }
@@ -748,7 +752,7 @@ h6 {
 .section-heading h2 {
     /* font-size: 14px; */
     font-weight: bold;
-    color: #ccc;
+    /* color: #8f0000;h */
     letter-spacing: 2px;
     padding-bottom: 0;
 }
