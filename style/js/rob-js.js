@@ -14,25 +14,25 @@
       });
     });
 
-//   Pop up Window when entering site
-    document.addEventListener('DOMContentLoaded', function() {
-    var modal = document.getElementById("robPopUp");
+// //   Pop up Window when entering site
+//     document.addEventListener('DOMContentLoaded', function() {
+//     var modal = document.getElementById("robPopUp");
     
-    // Only show the modal if there's no hash in the URL
-    if (!window.location.hash) {
-      modal.style.display = "block";
-    }
+//     // Only show the modal if there's no hash in the URL
+//     if (!window.location.hash) {
+//       modal.style.display = "block";
+//     }
 
-    // Get the close button
-    var closeButton = document.querySelector(".close");
-    closeButton.addEventListener("click", function() {
-      modal.style.display = "none";
-    });
+//     // Get the close button
+//     var closeButton = document.querySelector(".close");
+//     closeButton.addEventListener("click", function() {
+//       modal.style.display = "none";
+//     });
 
-    // Close the modal if user clicks outside the modal content
-    window.addEventListener("click", function(event) {
-      if (event.target === modal) {
-        modal.style.display = "none";
-      }
-    });
-  });
+//     // Close the modal if user clicks outside the modal content
+//     window.addEventListener("click", function(event) {
+//       if (event.target === modal) {
+//         modal.style.display = "none";
+//       }
+//     });
+//   });
