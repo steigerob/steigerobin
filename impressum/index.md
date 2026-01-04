@@ -2,6 +2,7 @@
 layout: default
 title: Impressum
 permalink: /impressum/
+hide_banner: true
 ---
 
 <main class="content">
