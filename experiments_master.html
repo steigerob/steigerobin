@@ -1,0 +1,49 @@
+---
+layout: default
+title: Thesis Experiments
+permalink: /experiments_master.html
+hide_banner: true
+---
+
+<main id="content">
+  <section id="impressum" class="introduction scrollto">
+    <div class="row clearfix">
+      <div class="col-1">
+        <div class="section-heading">
+          <h1>Experimental test runs</h1>
+          <p>
+            The videos below document two navigation trials conducted on October 3, 2024,
+            at the <a href="https://isr.tecnico.ulisboa.pt/">ISR Testbed in Lisbon</a>.
+            These trials demonstrate the robot's performance in navigating towards a designated goal,
+            marked by an 'X' on the floor.
+            In the top right of each video, the current navigation data is displayed,
+            where the tf-frame "RigidBody01" represents the robot's real pose and "base_footprint"
+            indicates the most probable pose estimate derived from the GMapping algorithm.
+            For more details and the discussion of the results,
+            please refer to the corresponding sections in my thesis.<br>
+            <a href="{{ 'files/doc/thesis_master.pdf' | relative_url }}">Click here to download my thesis.</a><br>
+          </p>
+
+          <div class="video-container">
+            <div class="video-card">
+              <h2>DWA Planner</h2>
+              <video controls>
+                <source src="{{ 'files/videos/DWA.mp4' | relative_url }}" type="video/mp4">
+                Your browser does not support HTML video.
+              </video>
+            </div>
+
+            <div class="video-card">
+              <h2>Pose Boost Function</h2>
+              <video controls>
+                <source src="{{ 'files/videos/PBF.mp4' | relative_url }}" type="video/mp4">
+                Your browser does not support HTML video.
+              </video>
+            </div>
+          </div>
+        </div>
+        <p>Peace,<br>Robin</p>
+      </div>
+    </div>
+  </section>
+</main>
