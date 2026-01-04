@@ -1,723 +1,372 @@
-<!DOCTYPE html>
-<html>
+---
+layout: default
+title: Home
+permalink: /
+---
 
-<head lang="en">
-    <meta charset="UTF-8">
+<!--Main Content Area-->
+<main id="content">
 
-    <!--Page Title-->
-    <title>RobPage</title>
+  <!-- #skills Section -->
+  <section id="professional" class="introduction scrollto">
+    <div class="row clearfix">
+      <div class="section-heading col-4">
+        <h3 class="section-title">SKILLS</h3>
+        <h2 class="section-title">My Core Skills & Specializations</h2>
+        <p class="section-subtitle">
+          Throughout <a href="#miscellaneous">my studies and various projects</a>,
+          I've acquired experience and expertise in multiple fields.
+          Below are some of my key skills and areas of specialization.
+        </p>
+      </div>
 
-    <!--Meta Keywords and Description-->
-    <meta name="keywords" content="">
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+      <!-- Right Column: Skills Overview -->
+      <div class="row clearfix col-3-4">
 
-    <!--Favicon-->
-    <link rel="shortcut icon" href="files/images/favicon.ico" title="Favicon" />
-
-    <!-- Main CSS Files -->
-    <link rel="stylesheet" href="style/css/style.css">
-
-    <!-- Color CSS -->
-    <link rel="stylesheet" href="style/css/color.css">
-
-
-    <!--Icon Fonts - Font Awesome Icons-->
-    <link rel="stylesheet" href="style/css/font-awesome.min.css">
-    <!-- Animate CSS-->
-    <link href="style/css/animate.css" rel="stylesheet" type="text/css">
-
-    <!-- Personal CSS-->
-    <link href="style/css/rob_style.css" rel="stylesheet" type="text/css">
-
-    <!--Google Webfonts-->
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
-</head>
-
-<body>
-
-    <!-- Preloader -->
-    <div id="preloader">
-        <div id="status" class="la-ball-triangle-path">
-            <div></div>
-            <div></div>
-            <div></div>
+        <div class="col-3 icon-block icon-top wow fadeInUp" data-wow-delay="0.1s">
+          <div class="icon">
+            <i class="fa-solid fa-laptop-code fa-2x"></i>
+          </div>
+          <div class="icon-block-description">
+            <h4>Programming Languages</h4>
+            <p>C, C++, C#, Python, VB.NET, SQL, HTML, LaTeX</p>
+          </div>
         </div>
-    </div>
-    <!--End of Preloader-->
 
-    <div class="page-border" data-wow-duration="0.7s" data-wow-delay="0.2s">
-        <div class="top-border wow fadeInDown animated" style="visibility: visible; animation-name: fadeInDown;"></div>
-        <div class="right-border wow fadeInRight animated" style="visibility: visible; animation-name: fadeInRight;">
+        <div class="col-3 icon-block icon-top wow fadeInUp" data-wow-delay="0.3s">
+          <div class="icon">
+            <i class="fa-solid fa-cubes fa-2x"></i>
+          </div>
+          <div class="icon-block-description">
+            <h4>Frameworks / Libraries</h4>
+            <p>ROS, WPF, .NET, numpy, tikz, LaTeX, Matplotlib</p>
+          </div>
         </div>
-        <div class="bottom-border wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;"></div>
-        <div class="left-border wow fadeInLeft animated" style="visibility: visible; animation-name: fadeInLeft;"></div>
-    </div>
 
+        <div class="col-3 icon-block icon-top wow fadeInUp" data-wow-delay="0.5s">
+          <div class="icon">
+            <i class="fa-solid fa-diagram-project fa-2x"></i>
+          </div>
+          <div class="icon-block-description">
+            <h4>Development Methods</h4>
+            <p>Agile (Scrum), OOAD, UML,
+              Test-Driven Development (TDD)</p>
+          </div>
+        </div>
 
-    <div id="robPopUp" class="modal" style="display: none;">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <h2>Hey there!</h2>
-            <p>
-                Before you assume I'm a self-obsessed narcissist, let me clarify:
-                this page is meant to be a joke and purely for me to learn HTML.<br><br>
-                If you're interested in my professional side,
-                feel free to<br><a href="mailto:steigerobin@hotmail.de">send me a mail</a>
-                or <a href="files/doc/resume.pdf" download>download my CV</a>.
+        <div class="col-3 icon-block icon-top wow fadeInUp" data-wow-delay="0.5s">
+          <div class="icon">
+            <i class="fa-solid fa-gears fa-2x"></i>
+          </div>
+          <div class="icon-block-description">
+            <h4>Tools & OS</h4>
+            <p>Visual Studio, Git, SVN, Atom, Vim<br>
+              Linux (Ubuntu, Raspberry Pi OS, Mint etc.), Windows
             </p>
-
+          </div>
         </div>
+
+        <div class="col-3 icon-block icon-top wow fadeInUp" data-wow-delay="0.7s">
+          <div class="icon">
+            <i class="fa-solid fa-globe fa-2x"></i>
+          </div>
+          <div class="icon-block-description">
+            <h4>Languages</h4>
+            <p>Native German, Advanced English, Upper-Intermediate Portuguese & Spanish</p>
+          </div>
+        </div>
+
+        <div class="col-3 icon-block icon-top wow fadeInUp" data-wow-delay="0.9s">
+          <div class="icon">
+            <i class="fa-solid fa-robot fa-2x"></i>
+          </div>
+          <div class="icon-block-description">
+            <h4>Focus Areas</h4>
+            <p>Robotics & AI (ROS, C++), Full-Stack Development, WPF Applications, Requirements Engineering, UI-Design</p>
+          </div>
+        </div>
+
+      </div><!-- End .col-2-3 -->
+    </div><!-- End .row -->
+  </section>
+
+  <!--Professional Gallery-->
+  <aside id="gallery" class="row text-center scrollto clearfix" data-featherlight-gallery
+    data-featherlight-filter="a">
+    <a href="{{ 'files/images/gallery-images/professional/01.jpg' | relative_url }}" data-featherlight="image" class="col-3 wow fadeIn"
+      data-wow-delay="0.2s"><img src="{{ 'files/images/gallery-images/professional/01.jpg' | relative_url }}" alt="a professional photo" /></a>
+    <a href="{{ 'files/images/gallery-images/professional/02.jpg' | relative_url }}" data-featherlight="image" class="col-3 wow fadeIn"
+      data-wow-delay="0.4s"><img src="{{ 'files/images/gallery-images/professional/02.jpg' | relative_url }}" alt="a professional photo" /></a>
+    <a href="{{ 'files/images/gallery-images/professional/03.jpg' | relative_url }}" data-featherlight="image" class="col-3 wow fadeIn"
+      data-wow-delay="0.6s"><img src="{{ 'files/images/gallery-images/professional/03.jpg' | relative_url }}" alt="a professional photo" /></a>
+  </aside>
+  <!--End of Professional Gallery-->
+
+  <!--Professional Section-->
+  <div class="scrollto clearfix">
+    <div class="row no-padding-bottom clearfix">
+      <div class="col-3">
+        <img src="{{ 'files/images/professional.jpg' | relative_url }}" alt="Professional Rob" />
+      </div>
+
+      <div class="col-3">
+        <div class="section-heading">
+          <h3>PROFESSIONAL</h3>
+          <h2 class="section-title">Focusing On What Matters Most</h2>
+          <p class="section-subtitle">Hey I'm Robin a young, motivated software engineer.</p>
+        </div>
+        <p>
+          During my master's, I dove deep into robotics and AI while gaining
+          hands-on experience through various projects.
+          Beyond my studies, I've always enjoyed applying my knowledge in meaningful ways.
+        </p>
+        <p>
+          Two of my favorite projects were integrating software into a real robot and
+          building a WPF app entirely from scratch. 
+          I love connecting with people and truly value a supportive,
+          collaborative team.
+        </p>
+        <a href="{{ 'files/doc/resume.pdf' | relative_url }}" class="button">Download CV</a>
+      </div>
+
+      <div class="col-3">
+        <blockquote class="testimonial text-right bigtest">
+          <q>Absolutely perfect.
+            Rarely have I seen such a clear and meticulous piece of work.
+          </q>
+          <footer>&mdash; Dr. Lukas Luft,<br>AIS Freiburg</footer>
+        </blockquote>
+      </div>
     </div>
-
-
-
-    <div id="wrapper">
-
-        <header id="banner" class="scrollto clearfix" data-enllax-ratio=".5">
-            <div id="header" class="nav-collapse">
-                <div class="row clearfix">
-                    <div class="col-1">
-
-                        <!--Logo-->
-                        <div id="logo">
-
-                            <!--Logo that is shown on the banner-->
-                            <a href="index.html#banner">
-                                <img src="files/images/logo.png" id="banner-logo" alt="Landing Page" />
-                            </a>
-                            <!--End of Banner Logo-->
-
-                            <!--The Logo that is shown on the sticky Navigation Bar-->
-                            <a href="index.html#banner">
-                                <img src="files/images/logo.png" id="navigation-logo" alt="Landing Page" />
-                            </a>
-                            <!--End of Navigation Logo-->
-
-                        </div>
-                        <!--End of Logo-->
-
-                        <aside>
-                            <ul class="social-icons">
-                                <li>
-                                    <a target="_blank" title="LinkedIn" href="https://www.linkedin.com/in/steigerobin/">
-                                        <i class="fa fa-linkedin fa-1x"></i><span>LinkedIn</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a target="_blank" title="freelancermap" href="https://www.freelancermap.de/profil/software-engineer-und-ai-specialist-with-robotics-experience">
-                                        <img src="files/images/flm.png" alt="freelancermap" style="width:80%; vertical-align:middle; position:relative; top:-3px;">
-                                    </a>
-                                </li>
-                                <li>
-                                    <a target="_blank" title="Mail" href="mailto:steigerobin@hotmail.de">
-                                        <i class="fa fa-at fa-1x"></i><span>Mail</span>
-                                    </a>
-                                </li>
-                                <!-- <li>
-                                    <a target="_blank" title="Facebook" href="https://www.facebook.com/BigxRo/">
-                                        <i class="fa fa-facebook fa-1x"></i><span>Facebook</span>
-                                    </a>
-                                </li> -->
-                                <li>
-                                    <a target="_blank" title="Instagram" href="https://www.instagram.com/multijake75/">
-                                        <i class="fa fa-instagram fa-1x"></i><span>Instagram</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a target="_blank" title="WhatsApp"
-                                        href="https://wa.me/4915734845522?text=You%20look%20cute%20;-)">
-                                        <i class="fa fa-whatsapp fa-1x"></i><span>WhatsApp</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </aside>
-
-                        <!-- Navigation-->
-                        <nav id="nav-main">
-                            <ul>
-                                <li>
-                                    <a href="#banner">Home</a>
-                                </li>
-                                <!-- <li>
-                                    <a href="#skills">Skills</a>
-                                </li> -->
-                                <li>
-                                    <a href="#professional">Professional</a>
-                                </li>
-
-                                <li>
-                                    <a href="#testimonials">Testimonials</a>
-                                </li>
-                                 
-                                <li>
-                                    <a href="#gallery">Gallery</a>
-                                </li>
-
-                                <li>
-                                    <a href="#private">Private</a>
-                                </li>
-                                
-                                <li>
-                                    <a href="#miscellaneous">Miscellaneous</a>
-                                </li>
-
-
-                                <!--<li>
-                                <a href="#pricing">Pricing</a>
-                            </li>-->
-                            </ul>
-                        </nav>
-
-                        <div id="nav-trigger"><span></span></div>
-                        <nav id="nav-mobile"></nav>
-
-                    </div>
-                </div>
-            </div><!--End of Header-->
-
-            <!--Banner Content-->
-            <div id="banner-content" class="row clearfix">
-
-                <div class="col-38">
-
-                    <div class="section-heading">
-                        <h1>Welcome!</h1>
-                        <h2>I'm Robin, a software engineer specialized in robotics, AI,
-                            and bringing creative ideas to life.</h2>
-                    </div>
-
-                    <!--Call to Action-->
-                    <a class="button" href="mailto:steigerobin@hotmail.de">Send me love</a>
-                    <!--End Call to Action-->
-
-                </div>
-
-            </div><!--End of Row-->
-        </header>
-
-        <!--Main Content Area-->
-        <main id="content">
-
-            <!-- #skills Section -->
-            <section id="professional" class="introduction scrollto">
-
-            <!-- </section> text-center"> -->
-                <div class="row clearfix">
-
-                    <div class="section-heading col-4">
-                        <h3 class="section-title">SKILLS</h3>
-                        <h2 class="section-title">My Core Skills & Specializations</h2>
-                        <!-- <h3>SKILLS</h3> -->
-                        <p class="section-subtitle">
-                            Throughout <a href="#miscellaneous">my studies and various projects</a>,
-                            I've acquired experience and expertise in multiple fields.
-                            Below are some of my key skills and areas of specialization.
-                        </p>
-                    </div>
-                    <!-- Right Column: Skills Overview -->
-                    <div class="row clearfix col-3-4">
-
-                        <!-- Example Icon Block #1 -->
-                        <div class="col-3 icon-block icon-top wow fadeInUp" data-wow-delay="0.1s">
-                            <div class="icon">
-                                <i class="fa-solid fa-laptop-code fa-2x"></i>
-                            </div>
-                            <div class="icon-block-description">
-                                <h4>Programming Languages</h4>
-                                <p>C, C++, C#, Python, VB.NET, SQL, HTML, LaTeX</p>
-                            </div>
-                        </div>
-
-                        <!-- Example Icon Block #2 -->
-                        <div class="col-3 icon-block icon-top wow fadeInUp" data-wow-delay="0.3s">
-                            <div class="icon">
-                                <i class="fa-solid fa-cubes fa-2x"></i>
-                            </div>
-                            <div class="icon-block-description">
-                                <h4>Frameworks / Libraries</h4>
-                                <p>ROS, WPF, .NET, numpy, tikz, LaTeX, Matplotlib</p>
-                            </div>
-                        </div>
-
-                        <!-- Example Icon Block #3 -->
-                        <div class="col-3 icon-block icon-top wow fadeInUp" data-wow-delay="0.5s">
-                            <div class="icon">
-                                <i class="fa-solid fa-diagram-project fa-2x"></i>
-                            </div>
-                            <div class="icon-block-description">
-                                <h4>Development Methods</h4>
-                                <p>Agile (Scrum), OOAD, UML,
-                                    Test-Driven Development (TDD)</p>
-                            </div>
-                        </div>
-
-                        <!-- Example Icon Block #4 -->
-                        <div class="col-3 icon-block icon-top wow fadeInUp" data-wow-delay="0.5s">
-                            <div class="icon">
-                                <i class="fa-solid fa-gears fa-2x"></i>
-                            </div>
-                            <div class="icon-block-description">
-                                <h4>Tools & OS</h4>
-                                <p>Visual Studio, Git, SVN, Atom, Vim<br>
-                                   Linux (Ubuntu, Raspberry Pi OS, Mint etc.), Windows
-                                </p>
-                            </div>
-                        </div>
-
-                        <!-- Optionally more Icon Blocks for "Languages," "Focus Areas," etc. -->
-                        <div class="col-3 icon-block icon-top wow fadeInUp" data-wow-delay="0.7s">
-                            <div class="icon">
-                                <i class="fa-solid fa-globe fa-2x"></i>
-                            </div>
-                            <div class="icon-block-description">
-                                <h4>Languages</h4>
-                                <p>Native German, Advanced English, Upper-Intermediate Portuguese & Spanish</p>
-                            </div>
-                        </div>
-
-                        <div class="col-3 icon-block icon-top wow fadeInUp" data-wow-delay="0.9s">
-                            <div class="icon">
-                                <i class="fa-solid fa-robot fa-2x"></i>
-                            </div>
-                            <div class="icon-block-description">
-                                <h4>Focus Areas</h4>
-                                <p>Robotics & AI (ROS, C++), Full-Stack Development, WPF Applications, Requirements Engineering, UI-Design</p>
-                            </div>
-                        </div>
-
-                    </div><!-- End .col-2-3 -->
-                </div><!-- End .col-2-3 -->
-
-                </div><!-- End .row -->
-            </section>
-
-
-            <!--Professional Gallery-->
-            <aside id="gallery" class="row text-center scrollto clearfix" data-featherlight-gallery
-            data-featherlight-filter="a">
-
-                <a href="files/images/gallery-images/professional/01.jpg" data-featherlight="image" class="col-3 wow fadeIn"
-                    data-wow-delay="0.2s"><img src="files/images/gallery-images/professional/01.jpg" alt="a professional photo" /></a>
-                <a href="files/images/gallery-images/professional/02.jpg" data-featherlight="image" class="col-3 wow fadeIn"
-                    data-wow-delay="0.4s"><img src="files/images/gallery-images/professional/02.jpg" alt="a professional photo" /></a>
-                <a href="files/images/gallery-images/professional/03.jpg" data-featherlight="image" class="col-3 wow fadeIn"
-                    data-wow-delay="0.6s"><img src="files/images/gallery-images/professional/03.jpg" alt="a professional photo" /></a>
-
-
-            </aside>
-            
-            
-            <!--End of Professional Gallery-->
-
-
-            <!--Professional Section-->
-            <div class="scrollto clearfix">
-
-                <div class="row no-padding-bottom clearfix">
-
-
-                    <!--Content Left Side-->
-                    <div class="col-3">
-                        <img src="files/images/professional.jpg" alt="Professional Rob" />
-                    </div>
-                    <!--End Content Left Side-->
-
-                    <!--Content of the Right Side-->
-                    <div class="col-3">
-                        <div class="section-heading">
-                            <h3>PROFESSIONAL</h3>
-                            <h2 class="section-title">Focusing On What Matters Most</h2>
-                            <p class="section-subtitle">Hey I'm Robin a young, motivated software engineer.
-                        </div>
-                        <p>
-                            During my master's, I dove deep into robotics and AI while gaining
-                            hands-on experience through various projects.
-                            Beyond my studies, I've always enjoyed applying my knowledge in meaningful ways.
-                        </p>
-                        <p>
-                            Two of my favorite projects were integrating software into a real robot and
-                            building a WPF app entirely from scratch. 
-                            I love connecting with people and truly value a supportive,
-                            collaborative team.</p>
-                            <!-- <div style="display: flex; justify-content: space-between;"> -->
-                                <a href="files/doc/resume.pdf" class="button">
-                                    Download CV
-                                </a>
-                                <br>
-                                <!-- <a href="#miscellaneous" class="button">
-                                    Show Projects
-                                </a> -->
-                            </div>
-                    <!-- </div> -->
-                    <!--End Content Right Side-->
-
-                    <div class="col-3">
-                        <blockquote class="testimonial text-right bigtest">
-                            <q>Absolutely perfect.
-                                Rarely have I seen such a clear and meticulous piece of work.
-                            </q>
-                            <footer>— Dr. Lukas Luft,<br>AIS Freiburg</footer>
-                        </blockquote>
-
-                    </div>
-
-                </div>
-
-
-            </div>
-            <!--End of Professional Section-->
-            <!--Testimonials-->
-            <aside id="testimonials" class="scrollto text-center" data-enllax-ratio=".2">
-
-                <div class="row clearfix">
-
-                    <div class="section-heading">
-                        <h3>PROFESSIONAL FEEDBACK</h3>
-                        <h2 class="section-title">What do my mentors think?</h2>
-                    </div>
-
-
-                    <blockquote class="col-3 testimonial classic">
-                        <img src="files/images/user-images/ais.png" alt="User" />
-                        <q> Absolutely perfect.
-                            Rarely have I seen such a clear and meticulous piece of work.
-                        </q>
-                        <footer>Dr. Lukas Luft, AIS Freiburg</footer>
-                    </blockquote>
-                    <blockquote class="col-3 testimonial classic">
-                        <img src="files/images/user-images/jwf.jpg" alt="User" />
-                        <q> Mr. Steiger was competetent and team-oriented
-                            as well as valued and recognized by managers and colleagues alike.
-                        </q>
-                        <footer>Stefan Rothe - JW Froehlich</footer>
-                    </blockquote>
-                    <blockquote class="col-3 testimonial classic">
-                        <img src="files/images/user-images/uni.jpeg" alt="User" />
-                        <q> Robin Steiger is a dedicated and skilled professional,
-                            highly valued for his reliability, technical expertise, and multilingual teamwork
-                        </q>
-                        <footer> Dr. Janina Cünnen - University of Freiburg</footer>
-                    </blockquote>
-                </div>
-            </aside>
-            <!--End of Testimonials-->
-
-
-            <!--Private Section-->
-            <div id="private" class="scrollto clearfix">
-
-                <div class="row no-padding-bottom clearfix">
-                    <div class="col-3">
-                        <img src="files/images/private.jpg" alt="Private Rob" />
-                    </div>
-
-                    <!--Content Left Side-->
-                    <div class="col-3">
-                        <div class="section-heading">
-                            <h3>PRIVATE</h3>
-                            <h2 class="section-title">Live each day as if it were your last.</h2>
-                            <p class="section-subtitle">More than just a software engineer.
-                        </div>
-                        <p>
-                            I'm an optimistic, free-spirited individual who strives to enjoy every moment in life.
-                            Social connections, harmony, and forming meaningful relationships are especially important to me.
-                            I'm naturally curious and creative, always seeking new experiences and projects,
-                            even if that makes me a bit scatterbrained at times.
-                        </p>
-                        <p>
-                            I believe my friends and family benefit from my supportive, loyal nature,
-                            even in hard times.
-                            Deep connections and the unique perspectives each person brings to my life
-                            are a constant source of enrichment for me.
-                        </p>
-                        <a href="#" data-videoid="829886113" data-videosite="vimeo" class="button video link-lightbox">
-                            Watch: The Golden Cage <i class="fa fa-play" aria-hidden="true"></i>
-                        </a>
-
-                    </div>
-                    <!--End Content Left Side-->
-
-                    <!--Content of the Right Side-->
-                    <div class="col-3">
-
-                            <blockquote class="testimonial text-right bigtest">
-                            <q>Robin is an open-minded, warm-hearted, and helpful person...</q>
-                            <footer>— Marta, Friend</footer>
-                        </blockquote>
-    
-                    </div>
-                    <!--End Content Right Side-->
-
-
-
-                </div>
-
-
-            </div>
-            <!--End of Content Section-->
-
-            <!--Private Gallery-->
-            <aside id="gallery" class="row text-center scrollto clearfix" data-featherlight-gallery
-            data-featherlight-filter="a">
-
-                <a href="files/images/gallery-images/private/01.jpg" data-featherlight="image" class="col-3 wow fadeIn"
-                    data-wow-delay="0.2s"><img src="files/images/gallery-images/private/01.jpg" alt="a private photo" /></a>
-                <a href="files/images/gallery-images/private/02.jpg" data-featherlight="image" class="col-3 wow fadeIn"
-                    data-wow-delay="0.4s"><img src="files/images/gallery-images/private/02.jpg" alt="a private photo" /></a>
-                <a href="files/images/gallery-images/private/03.jpg" data-featherlight="image" class="col-3 wow fadeIn"
-                    data-wow-delay="0.6s"><img src="files/images/gallery-images/private/03.jpg" alt="a private photo" /></a>
-                <a href="files/images/gallery-images/private/06.jpg" data-featherlight="image" class="col-3 wow fadeIn"
-                    data-wow-delay="0.75s"><img src="files/images/gallery-images/private/06.jpg" alt="a private photo" /></a>
-                <a href="files/images/gallery-images/private/05.jpg" data-featherlight="image" class="col-3 wow fadeIn"
-                    data-wow-delay="0.9s"><img src="files/images/gallery-images/private/05.jpg" alt="a private photo" /></a>
-                <a href="files/images/gallery-images/private/04.jpg" data-featherlight="image" class="col-3 wow fadeIn"
-                    data-wow-delay="1.05s"><img src="files/images/gallery-images/private/04.jpg" alt="a private photo" /></a>
-
-            </aside>
-            <!--End of Private Gallery-->
-
-            <!--Testimonials-->
-            <aside id="private_testimonials" class="scrollto text-center" data-enllax-ratio=".2">
-
-                <div class="row clearfix">
-
-                    <div class="section-heading">
-                        <h3>PRIVATE FEEDBACK</h3>
-                        <h2 class="section-title">What my friends say about me...</h2>
-                    </div>
-                    <blockquote class="col-3 testimonial classic">
-                        <img src="files/images/user-images/wisla.jpg" alt="User" />
-                        <q>Robin is caring, trustworthy and has well-defined moral boundaries,
-                            in addition to having a very beautiful sense of justice.
-                        </q>
-                        <footer>Wisla - Girlfriend</footer>
-                    </blockquote>
-
-                    <blockquote class="col-3 testimonial classic">
-                        <img src="files/images/user-images/marta.png" alt="User" />
-                        <q>Robin is an open-minded, warm-hearted, and helpful person.
-                            He's incredibly creative and knows how to enjoy life to the fullest.
-                            His positivity and enthusiasm make him a great friend.
-                        </q>
-                        <footer>Marta - Friend</footer>
-                    </blockquote>
-                    <blockquote class="col-3 testimonial classic">
-                        <img src="files/images/user-images/mum.jpg" alt="User" />
-                        <q>Robin is a very likeable, open, sociable person who is concerned with maintaining a
-                            harmonious coexistence.
-                            He loves justice and likes to stand up for other people.</q>
-                        <footer>Petra - Mother</footer>
-                    </blockquote>
-
-                    <blockquote class="col-3 testimonial classic">
-                        <img src="files/images/user-images/monisha.png" alt="User" />
-                        <q> Robin naturally breaks the ice and bridges cultures.
-                            His analytical and creative mindset shines in every setting.
-                        </q>
-                        <footer> Monisha Das - Friend</footer>
-                    </blockquote>
-
-                    <blockquote class="col-3 testimonial classic">
-                        <img src="files/images/user-images/iri.jpg" alt="User" />
-                        <q>Robin is the kind of person one can always rely on,
-                            no matter the issues they are struggling with.
-                            Good taste in music and fashion. 5 stars.</q>
-                        <footer>Irina - Friend</footer>
-                    </blockquote>
-
-                    <blockquote class="col-3 testimonial classic">
-                        <img src="files/images/user-images/joshi.png" alt="User" />
-                        <q>Robin is charming, extravagant, and cheerful.
-                        </q>
-                        <footer>Joshua - Friend</footer>
-                    </blockquote>
-
-
-                </div>
-
-            </aside>
-            <!--End of Testimonials-->
-
-
-            <!--Miscellaneous-->
-            <section id="miscellaneous" class="secondary-color text-center scrollto clearfix ">
-                <div class="row clearfix">
-
-                    <div class="section-heading">
-                        <h3>Miscellaneous</h3>
-                        <h2 class="section-title">Projects & Stuff</h2>
-                        <p class="section-subtitle">
-                            In the following a small collection of some
-                            private stuff and professional projects.</p>
-                    </div>
-
-                    <div class="misc-block col-3 wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="misc-block-content">
-                            <h3>University Research</h3>
-                            <ul class="misc-block-content-listitem">
-                                <li><a href="files/doc/thesis_master.pdf">Master Thesis</a></li>
-                                <li><a href="files/doc/thesis_bachelor.pdf">Bachelor Thesis</a></li>
-                                <li><a href="files/doc/master_project.pdf">Master Project</a></li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="misc-block col-3 wow fadeInUp" data-wow-delay="0.2s">
-                        <div class="misc-block-content">
-                            <h3>SocRob</h3>
-                            <ul class="misc-block-content-listitem">
-                                <li><a href="https://irs-group.github.io/socrobwebsite/">SocRob@Home</a></li>
-                                <li><a href="#" data-videoid="EYNbImwH-mM" data-videosite="youtube"
-                                        class="video link-lightbox">
-                                        2024 - RoboCup Eindhoven</a></li>
-                                <li><a href="experiments_master.html">Master Experiments</a></li>
-                            </ul>
-                        </div>
-                    </div>
-
-
-
-                    <div class="misc-block col-3 wow fadeInUp" data-wow-delay="0.4s">
-                        <div class="misc-block-content">
-                            <h3>Movies</h3>
-                            <ul>
-
-                                <li><a href="#" data-videoid="829886113" data-videosite="vimeo"
-                                        class="video link-lightbox">
-                                        2023 - The Golden Cage</a></li>
-                                <li><a href="#" data-videoid="files/videos/Vampire.mp4" data-videosite="local"
-                                        class="video link-lightbox">
-                                        2022 - Wann strahlst Du?</a></li>
-                                <li><a href="#" data-videoid="files/videos/Dream.mp4" data-videosite="local"
-                                        class="video link-lightbox">
-                                        2022 - Summer Dream</a></li>
-                            </ul>
-
-                        </div>
-                    </div>
-
-                    <div class="misc-block col-3 wow fadeInUp" data-wow-delay="0.5s">
-                        <div class="misc-block-content">
-                            <h3 class="testimonial classic">Diploma</h3>
-                            <ul>
-                                <li><a href="files/doc/master.pdf">Master</a></li>
-                                <li><a href="files/doc/bachelor.pdf">Bachelor</a></li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="misc-block col-3 wow fadeInUp" data-wow-delay="0.6s">
-                        <div class="misc-block-content">
-                            <h3>Language references</h3>
-                            <ul>
-                                <li><a href="files/doc/spanish.pdf">Spanish</a></li>
-                                <li><a href="files/doc/portugues.pdf">Portuguese</a></li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="misc-block col-3 wow fadeInUp" data-wow-delay="0.7s">
-                        <div class="misc-block-content">
-                            <h3>References</h3>
-                            <ul>
-                                <li class="misc-block-content-listitem"><a href="files/doc/jwf.pdf">JW Froehlich</a>
-                                </li>
-                                <li><a href="files/doc/studi_assi.pdf">Freiburg University</a></li>
-                                <!-- <li id="open-chair" style="cursor:pointer;">Rocking Chair</li>
-
-                            <aside id="chair-pics" class="row text-center scrollto clearfix" data-featherlight-gallery data-featherlight-filter="a" style="display: none;">
-                                <a href="files/images/chair/01.jpeg" data-featherlight="image" class="col-3 wow fadeIn" data-wow-delay="0.1s">
-                                    <img src="files/images/chair/01.jpeg" alt="Landing Page"/>
-                                </a>
-                                <a href="files/images/chair/02.jpeg" data-featherlight="image" class="col-3 wow fadeIn" data-wow-delay="0.1s">
-                                    <img src="files/images/chair/02.jpeg" alt="Landing Page"/>
-                                </a>
-                                <a href="files/images/chair/03.jpeg" data-featherlight="image" class="col-3 wow fadeIn" data-wow-delay="0.1s">
-                                    <img src="files/images/chair/03.jpeg" alt="Landing Page"/>
-                                </a>
-                                <a href="files/images/chair/04.jpg" data-featherlight="image" class="col-3 wow fadeIn" data-wow-delay="0.1s">
-                                    <img src="files/images/chair/04.jpg" alt="Landing Page"/>
-                                </a>
-                            </aside> -->
-                            </ul>
-                        </div>
-                    </div>
-
-
-
-                </div>
-            </section>
-            <!--End of Miscellaneous-->
-        </main>
-        <!--End Main Content Area-->
-
-
-        <!--Footer-->
-        <footer id="landing-footer" class="clearfix">
-            <div class="row clearfix">
-
-                <p id="copyright" class="col-2"><a href="impressum.html">Impressum</a></p>
-
-
-                <ul class="col-2 social-icons">
-                    <li>
-                        <a target="_blank" title="LinkedIn" href="https://www.linkedin.com/in/steigerobin/">
-                            <i class="fa fa-linkedin fa-1x"></i><span>LinkedIn</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a target="_blank" title="freelancermap" href="https://www.freelancermap.de/profil/software-engineer-und-ai-specialist-with-robotics-experience">
-                            <img src="files/images/flm.png" alt="freelancermap" style="opacity:0.5; width:80%; vertical-align:middle; position:relative; top:-3px;">
-                        </a>
-                    </li>
-                    <li>
-                        <a target="_blank" title="Mail" href="mailto:steigerobin@hotmail.de">
-                            <i class="fa fa-at fa-1x"></i><span>Mail</span>
-                        </a>
-                    </li>
-                    <!-- <li>
-                        <a target="_blank" title="Facebook" href="https://www.facebook.com/BigxRo/">
-                            <i class="fa fa-facebook fa-1x"></i><span>Facebook</span>
-                        </a>
-                    </li> -->
-                    <li>
-                        <a target="_blank" title="Instagram" href="https://www.instagram.com/multijake75/">
-                            <i class="fa fa-instagram fa-1x"></i><span>Instagram</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a target="_blank" title="WhatsApp"
-                            href="https://wa.me/4915734845522?text=You%20look%20cute%20;-)">
-                            <i class="fa fa-whatsapp fa-1x"></i><span>WhatsApp</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </footer>
-        <!--End of Footer-->
+  </div>
+  <!--End of Professional Section-->
+
+  <!--Testimonials-->
+  <aside id="testimonials" class="scrollto text-center" data-enllax-ratio=".2">
+    <div class="row clearfix">
+      <div class="section-heading">
+        <h3>PROFESSIONAL FEEDBACK</h3>
+        <h2 class="section-title">What do my mentors think?</h2>
+      </div>
+
+      <blockquote class="col-3 testimonial classic">
+        <img src="{{ 'files/images/user-images/ais.png' | relative_url }}" alt="User" />
+        <q> Absolutely perfect.
+          Rarely have I seen such a clear and meticulous piece of work.
+        </q>
+        <footer>Dr. Lukas Luft, AIS Freiburg</footer>
+      </blockquote>
+      <blockquote class="col-3 testimonial classic">
+        <img src="{{ 'files/images/user-images/jwf.jpg' | relative_url }}" alt="User" />
+        <q> Mr. Steiger was competetent and team-oriented
+          as well as valued and recognized by managers and colleagues alike.
+        </q>
+        <footer>Stefan Rothe - JW Froehlich</footer>
+      </blockquote>
+      <blockquote class="col-3 testimonial classic">
+        <img src="{{ 'files/images/user-images/uni.jpeg' | relative_url }}" alt="User" />
+        <q> Robin Steiger is a dedicated and skilled professional,
+          highly valued for his reliability, technical expertise, and multilingual teamwork
+        </q>
+        <footer> Dr. Janina Cünnen - University of Freiburg</footer>
+      </blockquote>
+    </div>
+  </aside>
+  <!--End of Testimonials-->
+
+  <!--Private Section-->
+  <div id="private" class="scrollto clearfix">
+    <div class="row no-padding-bottom clearfix">
+      <div class="col-3">
+        <img src="{{ 'files/images/private.jpg' | relative_url }}" alt="Private Rob" />
+      </div>
+
+      <div class="col-3">
+        <div class="section-heading">
+          <h3>PRIVATE</h3>
+          <h2 class="section-title">Live each day as if it were your last.</h2>
+          <p class="section-subtitle">More than just a software engineer.</p>
+        </div>
+        <p>
+          I'm an optimistic, free-spirited individual who strives to enjoy every moment in life.
+          Social connections, harmony, and forming meaningful relationships are especially important to me.
+          I'm naturally curious and creative, always seeking new experiences and projects,
+          even if that makes me a bit scatterbrained at times.
+        </p>
+        <p>
+          I believe my friends and family benefit from my supportive, loyal nature,
+          even in hard times.
+          Deep connections and the unique perspectives each person brings to my life
+          are a constant source of enrichment for me.
+        </p>
+        <a href="#" data-videoid="829886113" data-videosite="vimeo" class="button video link-lightbox">
+          Watch: The Golden Cage <i class="fa fa-play" aria-hidden="true"></i>
+        </a>
+      </div>
+
+      <div class="col-3">
+        <blockquote class="testimonial text-right bigtest">
+          <q>Robin is an open-minded, warm-hearted, and helpful person...</q>
+          <footer>&mdash; Marta, Friend</footer>
+        </blockquote>
+      </div>
+    </div>
+  </div>
+  <!--End of Content Section-->
+
+  <!--Private Gallery-->
+  <aside id="gallery" class="row text-center scrollto clearfix" data-featherlight-gallery
+    data-featherlight-filter="a">
+    <a href="{{ 'files/images/gallery-images/private/01.jpg' | relative_url }}" data-featherlight="image" class="col-3 wow fadeIn"
+      data-wow-delay="0.2s"><img src="{{ 'files/images/gallery-images/private/01.jpg' | relative_url }}" alt="a private photo" /></a>
+    <a href="{{ 'files/images/gallery-images/private/02.jpg' | relative_url }}" data-featherlight="image" class="col-3 wow fadeIn"
+      data-wow-delay="0.4s"><img src="{{ 'files/images/gallery-images/private/02.jpg' | relative_url }}" alt="a private photo" /></a>
+    <a href="{{ 'files/images/gallery-images/private/03.jpg' | relative_url }}" data-featherlight="image" class="col-3 wow fadeIn"
+      data-wow-delay="0.6s"><img src="{{ 'files/images/gallery-images/private/03.jpg' | relative_url }}" alt="a private photo" /></a>
+    <a href="{{ 'files/images/gallery-images/private/06.jpg' | relative_url }}" data-featherlight="image" class="col-3 wow fadeIn"
+      data-wow-delay="0.75s"><img src="{{ 'files/images/gallery-images/private/06.jpg' | relative_url }}" alt="a private photo" /></a>
+    <a href="{{ 'files/images/gallery-images/private/05.jpg' | relative_url }}" data-featherlight="image" class="col-3 wow fadeIn"
+      data-wow-delay="0.9s"><img src="{{ 'files/images/gallery-images/private/05.jpg' | relative_url }}" alt="a private photo" /></a>
+    <a href="{{ 'files/images/gallery-images/private/04.jpg' | relative_url }}" data-featherlight="image" class="col-3 wow fadeIn"
+      data-wow-delay="1.05s"><img src="{{ 'files/images/gallery-images/private/04.jpg' | relative_url }}" alt="a private photo" /></a>
+  </aside>
+  <!--End of Private Gallery-->
+
+  <!--Testimonials-->
+  <aside id="private_testimonials" class="scrollto text-center" data-enllax-ratio=".2">
+    <div class="row clearfix">
+      <div class="section-heading">
+        <h3>PRIVATE FEEDBACK</h3>
+        <h2 class="section-title">What my friends say about me...</h2>
+      </div>
+
+      <blockquote class="col-3 testimonial classic">
+        <img src="{{ 'files/images/user-images/wisla.jpg' | relative_url }}" alt="User" />
+        <q>Robin is caring, trustworthy and has well-defined moral boundaries,
+          in addition to having a very beautiful sense of justice.
+        </q>
+        <footer>Wisla - Girlfriend</footer>
+      </blockquote>
+
+      <blockquote class="col-3 testimonial classic">
+        <img src="{{ 'files/images/user-images/marta.png' | relative_url }}" alt="User" />
+        <q>Robin is an open-minded, warm-hearted, and helpful person.
+          He's incredibly creative and knows how to enjoy life to the fullest.
+          His positivity and enthusiasm make him a great friend.
+        </q>
+        <footer>Marta - Friend</footer>
+      </blockquote>
+      <blockquote class="col-3 testimonial classic">
+        <img src="{{ 'files/images/user-images/mum.jpg' | relative_url }}" alt="User" />
+        <q>Robin is a very likeable, open, sociable person who is concerned with maintaining a
+          harmonious coexistence.
+          He loves justice and likes to stand up for other people.</q>
+        <footer>Petra - Mother</footer>
+      </blockquote>
+
+      <blockquote class="col-3 testimonial classic">
+        <img src="{{ 'files/images/user-images/monisha.png' | relative_url }}" alt="User" />
+        <q> Robin naturally breaks the ice and bridges cultures.
+          His analytical and creative mindset shines in every setting.
+        </q>
+        <footer> Monisha Das - Friend</footer>
+      </blockquote>
+
+      <blockquote class="col-3 testimonial classic">
+        <img src="{{ 'files/images/user-images/iri.jpg' | relative_url }}" alt="User" />
+        <q>Robin is the kind of person one can always rely on,
+          no matter the issues they are struggling with.
+          Good taste in music and fashion. 5 stars.</q>
+        <footer>Irina - Friend</footer>
+      </blockquote>
+
+      <blockquote class="col-3 testimonial classic">
+        <img src="{{ 'files/images/user-images/joshi.png' | relative_url }}" alt="User" />
+        <q>Robin is charming, extravagant, and cheerful.
+        </q>
+        <footer>Joshua - Friend</footer>
+      </blockquote>
+    </div>
+  </aside>
+  <!--End of Testimonials-->
+
+  <!--Miscellaneous-->
+  <section id="miscellaneous" class="secondary-color text-center scrollto clearfix ">
+    <div class="row clearfix">
+
+      <div class="section-heading">
+        <h3>Miscellaneous</h3>
+        <h2 class="section-title">Projects & Stuff</h2>
+        <p class="section-subtitle">
+          In the following a small collection of some
+          private stuff and professional projects.</p>
+      </div>
+
+      <div class="misc-block col-3 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="misc-block-content">
+          <h3>University Research</h3>
+          <ul class="misc-block-content-listitem">
+            <li><a href="{{ 'files/doc/thesis_master.pdf' | relative_url }}">Master Thesis</a></li>
+            <li><a href="{{ 'files/doc/thesis_bachelor.pdf' | relative_url }}">Bachelor Thesis</a></li>
+            <li><a href="{{ 'files/doc/master_project.pdf' | relative_url }}">Master Project</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="misc-block col-3 wow fadeInUp" data-wow-delay="0.2s">
+        <div class="misc-block-content">
+          <h3>SocRob</h3>
+          <ul class="misc-block-content-listitem">
+            <li><a href="https://irs-group.github.io/socrobwebsite/">SocRob@Home</a></li>
+            <li><a href="#" data-videoid="EYNbImwH-mM" data-videosite="youtube" class="video link-lightbox">2024 - RoboCup Eindhoven</a></li>
+            <li><a href="{{ 'experiments_master.html' | relative_url }}">Master Experiments</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="misc-block col-3 wow FadeInUp" data-wow-delay="0.4s">
+        <div class="misc-block-content">
+          <h3>Movies</h3>
+          <ul>
+            <li><a href="#" data-videoid="829886113" data-videosite="vimeo" class="video link-lightbox">2023 - The Golden Cage</a></li>
+            <li><a href="#" data-videoid="{{ 'files/videos/Vampire.mp4' | relative_url }}" data-videosite="local" class="video link-lightbox">2022 - Wann strahlst Du?</a></li>
+            <li><a href="#" data-videoid="{{ 'files/videos/Dream.mp4' | relative_url }}" data-videosite="local" class="video link-lightbox">2022 - Summer Dream</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="misc-block col-3 wow fadeInUp" data-wow-delay="0.5s">
+        <div class="misc-block-content">
+          <h3 class="testimonial classic">Diploma</h3>
+          <ul>
+            <li><a href="{{ 'files/doc/master.pdf' | relative_url }}">Master</a></li>
+            <li><a href="{{ 'files/doc/bachelor.pdf' | relative_url }}">Bachelor</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="misc-block col-3 wow fadeInUp" data-wow-delay="0.6s">
+        <div class="misc-block-content">
+          <h3>Language references</h3>
+          <ul>
+            <li><a href="{{ 'files/doc/spanish.pdf' | relative_url }}">Spanish</a></li>
+            <li><a href="{{ 'files/doc/portugues.pdf' | relative_url }}">Portuguese</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="misc-block col-3 wow fadeInUp" data-wow-delay="0.7s">
+        <div class="misc-block-content">
+          <h3>References</h3>
+          <ul>
+            <li class="misc-block-content-listitem"><a href="{{ 'files/doc/jwf.pdf' | relative_url }}">JW Froehlich</a></li>
+            <li><a href="{{ 'files/doc/studi_assi.pdf' | relative_url }}">Freiburg University</a></li>
+          </ul>
+        </div>
+      </div>
 
     </div>
-
-
-
-    <!-- Include JavaScript resources -->
-    <script src="style/js/jquery.1.8.3.min.js"></script>
-    <script src="style/js/wow.min.js"></script>
-    <script src="style/js/featherlight.min.js"></script>
-    <script src="style/js/featherlight.gallery.min.js"></script>
-    <script src="style/js/jquery.enllax.min.js"></script>
-    <script src="style/js/jquery.scrollUp.min.js"></script>
-    <script src="style/js/jquery.easing.min.js"></script>
-    <script src="style/js/jquery.stickyNavbar.min.js"></script>
-    <script src="style/js/jquery.waypoints.min.js"></script>
-    <script src="style/js/images-loaded.min.js"></script>
-    <script src="style/js/lightbox.min.js"></script>
-    <script src="style/js/site.js"></script>
-    <script src="https://kit.fontawesome.com/dae71c7dbb.js" crossorigin="anonymous"></script>
-    <script src="style/js/rob-js.js"></script>
-
-
-</body>
-
-</html>
+  </section>
+  <!--End of Miscellaneous-->
+</main>
+<!--End Main Content Area-->

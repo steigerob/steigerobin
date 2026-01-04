@@ -1,0 +1,189 @@
+/* 1. Override the pricing block content hover effect */
+#pricing .misc-block-content:hover {
+  border-color: #fff !important;
+  /* resets border color to white */
+}
+
+/* 2. Remove any background change from the parent on hover (if any) */
+#pricing .misc-block-content {
+  background-color: #fff !important;
+}
+
+/* 3. Add hover effect only on list items */
+#pricing .misc-block-content ul li {
+  transition: background-color 0.3s ease;
+  background: transparent;
+  /* ensure no initial background */
+}
+
+/* Change the background color on hover for list items */
+#pricing .misc-block-content ul li:hover {
+  background-color: #d2b356 !important;
+  /* your desired hover color */
+}
+
+/* Optional: Change link text color for better contrast */
+#pricing .misc-block-content ul li a {
+  color: #111;
+  transition: color 0.3s ease;
+}
+
+#pricing .misc-block-content ul li:hover a {
+  color: #fff !important;
+  /* white text on hover */
+}
+
+
+/* Make the pricing row a flex container */
+#pricing .row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  /* Ensures children (pricing blocks) all have the same height */
+}
+
+/* Make each pricing block a flex container as well */
+#pricing .misc-block {
+  display: flex;
+  flex-direction: column;
+  /* Optional: if you want them to take full width in flex items, remove the fixed width from col-3 */
+  /* flex: 1 0 33.33%; */
+}
+
+/* Ensure the content area grows to fill its parent */
+#pricing .misc-block-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Make the section heading span the full row and center its text */
+#pricing .row>.section-heading {
+  flex: 0 0 100%;
+  text-align: center;
+  margin-bottom: 20px;
+  /* optional spacing */
+}
+
+
+/* For Videos */
+
+.video-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  /* fixed gap between the cards */
+}
+
+.video-card {
+  flex: 1 1 0;
+  /* allow equal growth/shrink so they fill available space */
+  min-width: 300px;
+  /* if the container is too narrow, they will wrap */
+}
+
+.video-card video {
+  width: 100%;
+  height: auto;
+}
+
+/* On very small screens, force the cards to take full width */
+@media (max-width: 600px) {
+  .video-card {
+    flex: 1 1 100%;
+  }
+}
+
+
+/* Following is designing the appearance of the popoup */
+
+/* (hidden by default) */
+.modal {
+  display: none;
+  /* Initially hidden */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  /* Slightly darker semi-transparent background */
+  z-index: 99999;
+  /* Ensure the modal overlays other content */
+  transition: opacity 0.3s ease;
+}
+
+/* Modal content */
+.modal-content {
+  background-color: #fff;
+  margin: 10% auto;
+  /* Centers content vertically & horizontally with a little less margin */
+  padding: 30px;
+  border: none;
+  width: 90%;
+  max-width: 500px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  transition: transform 0.3s ease;
+  transform: translateY(-20px);
+  /* Initial slight offset */
+}
+
+.modal-content.show {
+  transform: translateY(0);
+}
+
+/* Close button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #bbb;
+  transition: color 0.2s ease;
+}
+
+.close:hover,
+.close:focus {
+  color: #555;
+  text-decoration: none;
+}
+
+
+
+/* Video playback lightbox modifications */
+
+#slvj-background-close {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9990;
+  /* for example */
+  /* background and any other styling */
+}
+
+.slvj-lightbox,
+#slvj-video-embed {
+  position: relative;
+  z-index: 9999;
+  /* ensure it's above the background */
+}
+
+
+
+/* Changing featherlight images size and limiting it */
+
+.featherlight .featherlight-content img.featherlight-image {
+  /* Scale the big image to fit within the viewport */
+  max-width: 80vw;
+  max-height: 80vh;
+  width: auto;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
