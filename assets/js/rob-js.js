@@ -12,6 +12,7 @@
         e.preventDefault();
         $("#bakery-pics a").first().trigger("click");
       });
+
     });
 
 // //   Pop up Window when entering site

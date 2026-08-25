@@ -66,6 +66,237 @@
 }
 
 
+/* Experience */
+
+#experience .row {
+  display: block;
+}
+
+#experience .row>.section-heading {
+  text-align: center;
+}
+
+#experience .experience-grid {
+  display: block;
+}
+
+#experience .experience-row {
+  display: flex !important;
+  flex-wrap: nowrap;
+  align-items: stretch;
+}
+
+#experience .experience-row::after {
+  content: none;
+}
+
+#experience .misc-block {
+  display: flex;
+  flex: 0 0 50%;
+  width: auto;
+  min-width: 0;
+  box-sizing: border-box;
+  float: none;
+  padding: 15px;
+}
+
+#experience .misc-block-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 0;
+}
+
+#experience .misc-block-content p {
+  text-align: left;
+}
+
+#experience .experience-card-header {
+  height: 155px;
+  padding: 22px 24px 18px 24px;
+  box-sizing: border-box;
+  border-bottom: 1px solid #eeeeee;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+#experience .experience-logos {
+  height: 58px;
+  margin-bottom: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+}
+
+#experience .experience-logos img {
+  max-width: 255px;
+  max-height: 100px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+#experience .experience-meta p {
+  margin: 0;
+  text-align: center;
+  white-space: nowrap;
+}
+
+#experience .experience-period::before {
+  content: " | ";
+}
+
+#experience .experience-description {
+  margin: 0;
+  padding: 20px 24px 24px 24px;
+}
+
+@media all and (min-width: 769px) {
+  #experience .misc-block {
+    animation: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+    visibility: visible !important;
+  }
+
+  #experience .experience-card-header {
+    padding-bottom: 8px;
+  }
+
+  #experience .experience-logos {
+    margin-bottom: 0;
+  }
+
+  #experience .experience-meta {
+    margin-top: auto;
+  }
+}
+
+@media all and (max-width: 768px) {
+  #experience .experience-row {
+    flex-direction: column;
+  }
+
+  #experience .misc-block {
+    flex-basis: 100%;
+    width: 100%;
+  }
+
+  #experience .experience-card-header {
+    height: auto;
+    min-height: 155px;
+  }
+
+  #experience .experience-logos {
+    height: 56px;
+  }
+
+  #experience .experience-logos img {
+    max-width: 125px;
+    max-height: 46px;
+  }
+
+  #experience .experience-meta p {
+    white-space: normal;
+  }
+
+  #experience .experience-period {
+    display: block;
+  }
+
+  #experience .experience-period::before {
+    content: none;
+  }
+}
+
+
+/* Wedding */
+
+#wedding {
+  border-top: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+}
+
+#wedding .row {
+  display: block;
+  padding: 60px 0;
+}
+
+#wedding .wedding-heading {
+  text-align: center;
+}
+
+#wedding .wedding-heading h2:after {
+  margin: 30px auto 25px auto;
+}
+
+#wedding .wedding-layout {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-areas: "yes copy rings";
+  align-items: center;
+  gap: 24px;
+}
+
+#wedding .wedding-tile {
+  position: relative;
+  margin: 0;
+  display: block;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  background: #1f1b18;
+}
+
+#wedding .wedding-tile img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#wedding .wedding-tile-yes {
+  grid-area: yes;
+}
+
+#wedding .wedding-copy {
+  grid-area: copy;
+  padding: 0 12px;
+  text-align: center;
+}
+
+#wedding .wedding-copy p {
+  margin: 0 auto;
+}
+
+#wedding .wedding-copy .button {
+  margin-bottom: 0;
+}
+
+#wedding .wedding-tile-rings {
+  grid-area: rings;
+}
+
+@media all and (max-width: 768px) {
+  #wedding .row {
+    padding: 45px 0;
+  }
+
+  #wedding .wedding-layout {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-areas:
+      "yes rings"
+      "copy copy";
+    gap: 12px;
+  }
+
+  #wedding .wedding-copy {
+    padding: 12px 0 0;
+  }
+}
+
+
 /* For Videos */
 
 .video-container {
