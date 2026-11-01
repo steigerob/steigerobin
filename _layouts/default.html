@@ -56,7 +56,9 @@
   </div>
 
   <div id="wrapper">
-    {% include header.html %}
+    {% unless page.hide_site_header %}
+      {% include header.html %}
+    {% endunless %}
 
     {{ content }}
 
