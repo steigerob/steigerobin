@@ -1,54 +1,265 @@
 ---
-layout: default
-title: Airbnb
-description: Welcome and practical instructions for our Airbnb guests.
+layout: guest
+title: Welcome to Freiburg | Your guest guide
+description: Make yourself at home. Your guide to arriving, settling in, and enjoying your Airbnb stay in Freiburg.
 permalink: /airbnb/
 hide_banner: true
 hide_site_header: true
 ---
 
-<main id="content" class="guest-guide">
-  <header class="guest-guide-heading">
-    <h1>Welcome to our Airbnb</h1>
-    <p>Here are a few quick videos to help you settle in and enjoy your stay.</p>
+<div class="guide-shell">
+  <header class="guide-header">
+    <div class="guide-brand">
+      <svg viewBox="0 0 32 32" fill="none" aria-hidden="true">
+        <path d="M5 14 16 5l11 9v13H5Z M12 27V17h8v10" />
+        <path d="M22 7V4h4v6" />
+      </svg>
+      <span>A stay in Freiburg<small>Your home, for a little while.</small></span>
+    </div>
+    <a class="header-help" href="#contact">Need a hand? <span aria-hidden="true">&rarr;</span></a>
   </header>
 
-  <section class="guest-video" aria-labelledby="guest-video-welcome">
-    <h2 id="guest-video-welcome">Welcome and how to get in</h2>
-    <div class="guest-video-frame">
-      <iframe
-        src="https://www.youtube-nocookie.com/embed/nrqSKrI6W3c"
-        title="Welcome and how to get into the Airbnb"
-        loading="lazy"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerpolicy="strict-origin-when-cross-origin"
-        allowfullscreen></iframe>
-    </div>
-  </section>
+  <main id="content" tabindex="-1">
+    <section class="guide-hero" aria-labelledby="welcome-heading">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="welcome-dot" aria-hidden="true"></span> Your Freiburg guest guide</p>
+        <h1 id="welcome-heading">Welcome to<br><em>Freiburg.</em></h1>
+        <p class="hero-intro">We&rsquo;re so happy you&rsquo;re here. Put down your bags, help yourself to a treat, and make yourself at home.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#essentials">Get settled <span aria-hidden="true">&darr;</span></a>
+          <a class="text-link" href="#videos">Watch the quick guides <span aria-hidden="true">&rarr;</span></a>
+          <a class="text-link" href="{{ '/airbnb/EN_DE_airbnb_welcome_freiburg_v2.pdf' | relative_url }}" download="Freiburg-welcome-guide-EN-DE.pdf">Download welcome guide (PDF) <span aria-hidden="true">&darr;</span><span class="sr-only"> in English and German</span></a>
+        </div>
+      </div>
+      <figure class="hero-art">
+        <img src="{{ '/assets/images/freiburg-guest-guide.svg' | relative_url }}" width="640" height="500" alt="An illustration of Freiburg's cathedral and red rooftops, with green Black Forest hills behind them.">
+        <figcaption><span class="caption-line" aria-hidden="true"></span> Freiburg im Breisgau, Germany</figcaption>
+      </figure>
+    </section>
 
-  <section class="guest-video" aria-labelledby="guest-video-trash">
-    <h2 id="guest-video-trash">How to separate the trash</h2>
-    <div class="guest-video-frame">
-      <iframe
-        src="https://www.youtube-nocookie.com/embed/koJJ0aF6jU4"
-        title="How to separate the trash"
-        loading="lazy"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerpolicy="strict-origin-when-cross-origin"
-        allowfullscreen></iframe>
-    </div>
-  </section>
+    <section class="arrival-strip" aria-label="Your stay at a glance">
+      <dl>
+        <div class="stay-fact">
+          <dt>Check-in</dt>
+          <dd>From <strong>15:00</strong></dd>
+        </div>
+        <div class="stay-fact">
+          <dt>Check-out</dt>
+          <dd>By <strong>11:00</strong></dd>
+        </div>
+        <div class="stay-fact">
+          <dt>Quiet hours</dt>
+          <dd><strong>00:00 &ndash; 10:00</strong></dd>
+        </div>
+        <div class="stay-fact">
+          <dt>Wi-Fi</dt>
+          <dd><a href="#wifi">Let&rsquo;s get you online <span aria-hidden="true">&rarr;</span></a></dd>
+        </div>
+      </dl>
+    </section>
 
-  <section class="guest-video" aria-labelledby="guest-video-washing-machine">
-    <h2 id="guest-video-washing-machine">How to use the washing machine</h2>
-    <div class="guest-video-frame">
-      <iframe
-        src="https://www.youtube-nocookie.com/embed/Q8hwBbg8qls"
-        title="How to use the washing machine"
-        loading="lazy"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerpolicy="strict-origin-when-cross-origin"
-        allowfullscreen></iframe>
-    </div>
-  </section>
-</main>
+    <section id="videos" class="guide-section" aria-labelledby="videos-heading">
+      <div class="section-heading">
+        <p class="eyebrow">The quick guides</p>
+        <h2 id="videos-heading">A little help, on film.</h2>
+        <p>Three short videos to make the practical bits easy.</p>
+      </div>
+      <div class="video-grid">
+        <article class="guest-video" aria-labelledby="guest-video-welcome">
+          <div class="guest-video-frame">
+            <iframe
+              src="https://www.youtube-nocookie.com/embed/nrqSKrI6W3c"
+              title="Welcome and how to get into the Airbnb"
+              loading="lazy"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen></iframe>
+          </div>
+          <div class="video-copy">
+            <span class="video-label">01 / Arriving</span>
+            <h3 id="guest-video-welcome">Welcome &amp; getting in</h3>
+            <p>A quick hello and a walkthrough to help you arrive with ease.</p>
+            <a class="video-watch" href="https://www.youtube.com/watch?v=nrqSKrI6W3c" target="_blank" rel="noopener noreferrer">Open on YouTube <span aria-hidden="true">&nearr;</span><span class="sr-only">: welcome and getting in (opens in a new tab)</span></a>
+          </div>
+        </article>
+        <article class="guest-video" aria-labelledby="guest-video-trash">
+          <div class="guest-video-frame">
+            <iframe
+              src="https://www.youtube-nocookie.com/embed/koJJ0aF6jU4"
+              title="How to separate the trash"
+              loading="lazy"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen></iframe>
+          </div>
+          <div class="video-copy">
+            <span class="video-label">02 / Recycling</span>
+            <h3 id="guest-video-trash">Everything in its place</h3>
+            <p>A simple guide to sorting the rubbish. <a href="#waste-sorting">Written tips below.</a></p>
+            <a class="video-watch" href="https://www.youtube.com/watch?v=koJJ0aF6jU4" target="_blank" rel="noopener noreferrer">Open on YouTube <span aria-hidden="true">&nearr;</span><span class="sr-only">: sorting the rubbish (opens in a new tab)</span></a>
+          </div>
+        </article>
+        <article class="guest-video" aria-labelledby="guest-video-washing-machine">
+          <div class="guest-video-frame">
+            <iframe
+              src="https://www.youtube-nocookie.com/embed/Q8hwBbg8qls"
+              title="How to use the washing machine"
+              loading="lazy"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen></iframe>
+          </div>
+          <div class="video-copy">
+            <span class="video-label">03 / Laundry</span>
+            <h3 id="guest-video-washing-machine">A fresh start</h3>
+            <p>How the coin-operated washing machine works. Please ask us before doing laundry.</p>
+            <a class="video-watch" href="https://www.youtube.com/watch?v=Q8hwBbg8qls" target="_blank" rel="noopener noreferrer">Open on YouTube <span aria-hidden="true">&nearr;</span><span class="sr-only">: using the washing machine (opens in a new tab)</span></a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="essentials" class="guide-section" aria-labelledby="essentials-heading">
+      <div class="section-heading">
+        <p class="eyebrow">Settle in &amp; slow down</p>
+        <h2 id="essentials-heading">The little comforts, covered.</h2>
+        <p>A coffee, a cosy evening, and the things you might need along the way.</p>
+      </div>
+      <div class="comfort-grid">
+        <article id="wifi" class="comfort-card">
+          <svg class="comfort-icon" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+            <path d="M4 12a19 19 0 0 1 24 0M8 17a13 13 0 0 1 16 0M12 22a7 7 0 0 1 8 0" />
+            <circle cx="16" cy="27" r="1" />
+          </svg>
+          <h3>Make yourself connected</h3>
+          <p>Connect to our guest Wi-Fi using these details.</p>
+          <dl class="wifi-details">
+            <div><dt>Network</dt><dd><code>dumbawifi</code></dd></div>
+            <div><dt>Password</dt><dd><code>abcd12342</code></dd></div>
+          </dl>
+        </article>
+        <article class="comfort-card">
+          <svg class="comfort-icon" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+            <path d="M5 12h17v9a7 7 0 0 1-7 7h-3a7 7 0 0 1-7-7Zm17 2h3a4 4 0 0 1 0 8h-3M10 4v3M16 3v4" />
+          </svg>
+          <h3>But first, coffee</h3>
+          <p>For the Bosch Tassimo, check the water, pop in a T-Disc, close the lid, and press the button. Help yourself to the treats in your room, too.</p>
+          <p class="card-tip">Red light? The water tank probably needs a top-up.</p>
+        </article>
+        <article class="comfort-card">
+          <svg class="comfort-icon" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+            <path d="M6 4v8a4 4 0 0 0 8 0V4M10 4v24M25 28V4c-5 3-7 8-7 13h7" />
+          </svg>
+          <h3>A place at the table</h3>
+          <p>You&rsquo;re welcome to use the kitchen utensils and spices. Keep your food in the fridge compartment labelled &ldquo;Airbnb&rdquo;. Can&rsquo;t find something? Let us know.</p>
+        </article>
+        <article class="comfort-card">
+          <svg class="comfort-icon" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+            <rect x="3" y="6" width="26" height="18" rx="3" />
+            <path d="M11 28h10M16 24v4m-3-17 7 4-7 4Z" />
+          </svg>
+          <h3>Your evening, sorted</h3>
+          <p>The TV has a Fire TV Stick, and you&rsquo;re welcome to use our Netflix account. Put your feet up and find something good to watch.</p>
+        </article>
+        <article class="comfort-card">
+          <svg class="comfort-icon" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+            <path d="M5 17h22v4a6 6 0 0 1-6 6H11a6 6 0 0 1-6-6Zm3 0V8a4 4 0 0 1 8 0v2M5 28l-1 2m23-2 1 2M14 10h4" />
+          </svg>
+          <h3>A little bathroom kindness</h3>
+          <p>The shower gel and shampoo labelled &ldquo;AirBnB&rdquo; are for you to use. Forgotten your toothbrush? Ask us &mdash; we have a spare for emergencies.</p>
+        </article>
+        <article class="comfort-card">
+          <svg class="comfort-icon" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+            <path d="M11 4h10l5 15H6Zm5 15v9m-6 0h12M26 5v4m-2-2h4" />
+          </svg>
+          <h3>Set the mood</h3>
+          <p>The white remote dims the desk and floor lamps. For a darker room, simply lower the roller shutter and get comfortable.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="guide-section" aria-labelledby="house-heading">
+      <div class="section-heading">
+        <p class="eyebrow">Good to know</p>
+        <h2 id="house-heading">A happy home, shared.</h2>
+        <p>A few small things that help everyone feel comfortable.</p>
+      </div>
+      <div class="house-layout">
+        <div class="house-notes">
+          <h3>A little consideration goes a long way</h3>
+          <ul class="house-rules">
+            <li>
+              <span class="rule-number" aria-hidden="true">01</span>
+              <div><h4>Quiet hours: 00:00 &ndash; 10:00</h4><p>Please keep noise to a minimum during these hours.</p></div>
+            </li>
+            <li>
+              <span class="rule-number" aria-hidden="true">02</span>
+              <div><h4>Some time to yourself</h4><p>Going to sleep or wanting a little privacy? Move the slider on your room door to red.</p></div>
+            </li>
+            <li>
+              <span class="rule-number" aria-hidden="true">03</span>
+              <div><h4>Keep the room smoke-free</h4><p>Smoking is only allowed in the kitchen at the open window, with the kitchen door kept closed.</p></div>
+            </li>
+          </ul>
+        </div>
+        <div class="practical-notes">
+          <h3>The practical bits</h3>
+          <details id="waste-sorting">
+            <summary>Sorting the rubbish <span class="details-toggle" aria-hidden="true"></span></summary>
+            <dl class="waste-list">
+              <div><dt>General &amp; organic waste</dt><dd>The pull-out bin under the sink.</dd></div>
+              <div><dt>Paper</dt><dd>At the very back under the sink.</dd></div>
+              <div><dt>Plastic packaging</dt><dd>The yellow bag to the right of the microwave.</dd></div>
+              <div><dt>Glass &amp; deposit bottles</dt><dd>Leave them next to the microwave.</dd></div>
+            </dl>
+          </details>
+          <details>
+            <summary>A load of laundry <span class="details-toggle" aria-hidden="true"></span></summary>
+            <div class="details-copy">
+              <p>Want to do some washing? Please let us know first. We&rsquo;ll happily explain how the coin-operated washing machine works.</p>
+              <a class="text-link" href="#guest-video-washing-machine">Watch the laundry guide <span aria-hidden="true">&uarr;</span></a>
+            </div>
+          </details>
+          <details>
+            <summary>Parking in Freiburg <span class="details-toggle" aria-hidden="true"></span></summary>
+            <div class="details-copy">
+              <p>For parking options and information, take a look at the City of Freiburg&rsquo;s official guide.</p>
+              <a class="text-link" href="https://www.freiburg.de/pb/231355.html" target="_blank" rel="noopener noreferrer">City parking information <span aria-hidden="true">&nearr;</span><span class="sr-only"> (opens in a new tab)</span></a>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="checkout-card guide-section" aria-labelledby="checkout-heading">
+      <div class="section-heading">
+        <p class="eyebrow">Until next time</p>
+        <h2 id="checkout-heading">Before you head off&hellip;</h2>
+        <p>Just three little things before your next adventure.</p>
+      </div>
+      <ol class="checkout-list">
+        <li><span aria-hidden="true">01</span><div><h3>Check out by 11:00</h3><p>Thank you for checking out on time.</p></div></li>
+        <li><span aria-hidden="true">02</span><div><h3>Leave your key</h3><p>On the desk in your room, please.</p></div></li>
+        <li><span aria-hidden="true">03</span><div><h3>The &euro;20 cleaning fee</h3><p>Leave it on the desk with the key.</p></div></li>
+      </ol>
+    </section>
+
+    <section id="contact" class="contact-card guide-section" aria-labelledby="contact-heading">
+      <div class="host-monogram" aria-hidden="true">R</div>
+      <div class="contact-copy">
+        <p class="eyebrow">Your host, Robin</p>
+        <h2 id="contact-heading">Need anything? Just ask.</h2>
+        <p>We&rsquo;re happy to help. Find us in person, send a WhatsApp, or give us a call.</p>
+      </div>
+      <div class="contact-actions">
+        <a class="button button-light" href="https://wa.me/4915734845522?text=Help%20me" target="_blank" rel="noopener noreferrer">Message Robin <span aria-hidden="true">&nearr;</span><span class="sr-only"> on WhatsApp (opens in a new tab)</span></a>
+        <a class="contact-phone" href="tel:+4915734845522"><span class="sr-only">Call Robin: </span>+49 1573 4845522</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="guide-footer">
+    <p>A little guide, made for a lovely stay.</p>
+    <a href="#content">Back to the top <span aria-hidden="true">&uarr;</span></a>
+  </footer>
+</div>
